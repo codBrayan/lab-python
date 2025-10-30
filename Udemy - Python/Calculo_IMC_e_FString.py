@@ -1,9 +1,13 @@
-print("Para descobrir seu IMC, por favor insira os seguintes dados:")
+print('"Para descobrir seu IMC, por favor insira os seguintes dados:"')
+idade = 22
+print(f'{idade:.2f}')
 nome = input("Nome: ")
 peso = float(input("Peso (Ex: 86.0): "))
 altura = float(input("Altura (Ex: 1.70): "))
 valorIMC = peso / altura ** 2
-print(f'\n{nome}, seu IMC é de {valorIMC:.2f}') 
+print('\n{}, seu IMC é de {:.2f}'.format(nome, valorIMC)) 
+# Estas chaves dentro da strings são para referenciar 
+
 
 if valorIMC <= 18.5:
     print("Abaixo do peso")
